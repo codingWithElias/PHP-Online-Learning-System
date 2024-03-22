@@ -1,0 +1,182 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: PoppinsBlack;
+  src: url(../fonts/Poppins-Black.ttf);
+}
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Poppins, sans-serif;
+}
+
+img {
+    max-width: 100% !important;
+}
+.main-footer {
+  margin-top: 100px;
+  width: 100%;
+  background: #333;
+  padding: 15px;
+  justify-content: center;
+}
+
+.main-footer h4 {
+  text-align: center;
+  color: #aaa;
+  font-weight: 200;
+  font-size: 16px;
+}
+.container {
+	min-height: 90vh;
+}
+.side-by-side {
+   display: flex;
+   min-height: 100vh;
+}
+.side-by-side .l-side{
+    width: 350px;
+}
+.l-side .profile img {
+	width: 100%;
+}
+	.side-by-side .r-side{
+	    width: 100%;
+	}
+@media only screen and (max-width: 992px) {
+  /* For mobile phones: */
+  .side-by-side {
+  	flex-direction: column;
+  }
+  .side-by-side .l-side{
+  	text-align: center;
+    width: 100%;
+	}
+	.l-side .profile img {
+		width: 100%;
+		max-width: 200px;
+	}
+	.side-by-side .r-side{
+	    width: 100%;
+	}
+}
+.course-list-title {
+   margin-top: 70px;
+}
+.course-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.course-list .course {
+  width: 50%;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 760px) {
+  .course-list .course {
+    width: 99%;
+  }
+}
+.certificate {
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    margin: 10px auto;
+    border: 20px double #3498db;
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+}
+
+.certificate .header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.certificate .content {
+    padding: 40px;
+    font-size: 20px;
+}
+
+.certificate .signature {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    font-size: 18px;
+}
+
+.certificate .download-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.certificate .download-btn:hover {
+    cursor: pointer;
+    background-color: #287bbc;
+}
+.certificate .content img {
+  width: 110px;
+  height: 100px;
+}
+
+.md-btn {
+   font-size: 14px !important;
+}
+
+/* admin*/
+.overall-statistics ul {
+   flex-wrap: wrap;
+}
+.overall-statistics ul li{
+   list-style: none;
+   background: #f0faf4;
+   max-width: 300px;
+   width: 90%;
+   padding: 40px;
+   margin: 10px;
+   text-align: center;
+}
+.overall-statistics ul li span{
+   display: block;
+   font-size: 40px;
+   font-weight: bolder;
+}
+
+/* enrollment-statistics */
+
+.enrollment-statistics ul {
+   flex-wrap: wrap;
+}
+.enrollment-statistics ul li{
+   list-style: none;
+   background: #f0faf4;
+   max-width: 300px;
+   width: 90%;
+   padding: 40px;
+   margin: 10px;
+   text-align: center;
+}
+.enrollment-statistics ul li span{
+   display: block;
+   font-size: 25px;
+   font-weight: bolder;
+}
+.system-activities ul li{
+   background: #f0faf4;
+   padding: 10px;
+   margin: 5px;
+   list-style: square;
+}
+
+.circle {
+    border-radius: 50%;
+}
